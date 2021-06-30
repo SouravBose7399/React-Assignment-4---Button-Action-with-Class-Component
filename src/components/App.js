@@ -18,7 +18,7 @@ class App extends Component {
 						paraGraph:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
 					})
 				}}></button>
-				<p id="para">{this.state.paraGraph}</p>
+				<p id="para">{this.State.paraGraph}</p>
     		</div>
     	);
     }
