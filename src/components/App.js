@@ -9,17 +9,15 @@ class App extends Component {
 		}
 	};
 
-	paraChange(){
-		this.setState({
-			paraGraph:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
-		})
-	}
-
     render() {
     	return(
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
-				<button id="click" onClick={this.paraChange}></button>
+				<button id="click" onClick={()=>{
+					this.setState({
+						paraGraph:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+					})
+				}}></button>
 				<p id="para">{this.state.paraGraph}</p>
     		</div>
     	);
