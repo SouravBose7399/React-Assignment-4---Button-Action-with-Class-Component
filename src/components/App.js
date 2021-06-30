@@ -19,7 +19,7 @@ class App extends Component {
     	return(
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
-				<button id="click" onClick={e=>{this.paraChange}}></button>
+				<button id="click" onClick={this.paraChange}></button>
 				<p id="para">{this.state.paraGraph}</p>
     		</div>
     	);
